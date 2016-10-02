@@ -15,5 +15,16 @@ $(document).ready(function() {
       // itemsMobile : false
  
   });
+
+    $('#map-canvas').addClass('scrolloff'); // set the pointer events to none on doc ready
+      $('#map-canvas').on('click', function () {
+          $('#map-canvas').removeClass('scrolloff'); // set the pointer events true on click
+      });
+
+      // you want to disable pointer events when the mouse leave the canvas area;
+
+      $("#map-canvas").mouseleave(function () {
+          $('#map-canvas').addClass('scrolloff'); // set the pointer events to none when mouse leaves the map area
+      });
  
 });
