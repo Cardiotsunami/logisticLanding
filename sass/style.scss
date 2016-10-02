@@ -39,10 +39,14 @@ header a{
 	color: #34495e;
 	text-decoration: none;
 	font-size: 1.618em;
+	padding: 5px 10px;
+	border-radius: 3px;
 }
 
 header a:hover{
 	text-decoration: none;
+	background: $ctdcolor;
+	color: white;
 }
 
 header .link{
@@ -266,4 +270,9 @@ footer p{
 
 .footersub p{
 	font-size: 1.4em;
+}
+
+.info img:hover{
+	filter: brightness(0.2);
+	cursor: pointer;
 }
